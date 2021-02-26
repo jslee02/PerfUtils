@@ -38,6 +38,10 @@ target_compile_definitions(PerfUtils
 set_target_properties(PerfUtils PROPERTIES
     VERSION ${PerfUtils_VERSION}
 )
+target_compile_options(PerfUtils
+    PRIVATE
+        -fPIC
+)
 
 ################################################################################
 ## Installation & Export #######################################################
